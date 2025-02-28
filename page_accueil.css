@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  /* Barre de navigation */
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; /* Centrer verticalement */
+    padding: 20px;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+  }
+  
+  
+  .logo a {
+    font-size: 40px;
+    font-style: italic;
+    font-family: "Anton", sans-serif;
+    margin: 0;
+    text-decoration: none;
+    color:#000;
+
+  }
+  .nav-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #000000;
+}
+nav .onglets svg {
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  margin: 20px;
+}
+
+  .nav2 {
+    display: flex;
+    justify-content: center;
+    background-color: #a6a4a2;
+  }
+  
+  .nav2 .categories {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px; /* Optionnel : limite la largeur pour éviter l'étirement sur les grands écrans */
+    width: 100%; /* Optionnel : permet à la barre de navigation de prendre toute la largeur */
+    color: #333; /* Couleur initiale du texte */
+    text-decoration: none; /* Supprime les soulignements par défaut */
+    transition: color 0.3s ease; /* Ajoute une transition pour un effet fluide */
+
+}
+  
+  .nav2 .categories a {
+    font-size: 17px;
+    font-weight: bold;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .nav2 .categories a:last-child {
+    margin-right: 0; /* Supprime la marge à droite du dernier lien */
+  }
+  
+  .nav2 .categories a:hover {
+    color: #000;  /* Souligne le lien au survol */
+  }
+  
+  .nav2 .categories a:focus {
+    outline: none; /* Supprime la bordure de focus */
+  }
+  
+  .nav2 .categories a:focus-visible {
+    outline: 2px solid #fff; /* Ajoute une bordure de focus visible */
+  }
+  
+  
+  nav .onglets {
+    margin-left: auto; /* Mettre les onglets à droite */
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color:#000;
+  }
+  nav .onglets i {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    margin: 20px;;
+
+  }
+  
+  nav .onglets p {
+    font-size: 17px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  nav .onglets input {
+    margin: 8px 20px;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    background-color: #f2f2f2;
+    outline: none;
+  }
+  
+
+
+  /* Fin de la barre de navigation */
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+ 
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top; /* Alignement vertical au sommet */
+    width: 50%; /* Les deux colonnes ont la même largeur */
+  }
+  .text-right {
+    text-align: right; /* Alignement du texte à droite */
+  }
+
+  
+  .button {
+    display: inline-block;
+    background-color: #cfd2cf;
+    color: rgb(1, 1, 1);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Pour s'assurer que l'image n'a pas de marges blanches */
+    margin: auto; /* Centre l'image horizontalement */
+  }
+  .center-content {
+    text-align: center; /* Centrer le contenu */
+    background-color: #000;
+    color: white;
+    line-height: 1.5; /* Espacement entre chaque ligne */
+  }
+  .adhesion{
+    font-family: "Anton", sans-serif;
+    margin: 0%;
+    font-size: 28px;
+  }
+  .center-content p {
+    margin-bottom: 20px;
+    font-size: 17px;
+
+  }
+
+  /* Section principale */
+
+.main{
+    margin: 20px;
+    margin-top: 80px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+  }
+  /* Toutes les cartes */
+  .cards{
+    display:flex;
+    flex-wrap:wrap;
+    margin: auto;
+    justify-content: center;
+  }
+  .cards .card{
+    margin-right: 20px;
+    cursor:pointer;
+  }
+  .cards .card img{
+    width: 350px;
+  }
+  .cards .card .card-header{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .cards .card .card-body p{
+    margin-top: -10px;
+  }
+  /* Fin de toutes les cartes */
+  
+  /* Video de présentation */
+  .main .video{
+    margin-top: 80px;
+    width: 90%;
+  }
+  .main .video iframe{
+    border:none;
+    border-radius: 10px;
+    width: 100%;
+    height: 400px;
+  }
+  /* Fin de la vidéo de présentation */
+  /* Fin de la section principale */
+
+  @keyframes scrollRightToLeft {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .baniere {
+    overflow: hidden; /* Pour cacher le contenu débordant */
+  }
+  
+  .baniere img {
+  left: 0;
+    animation: scrollRightToLeft 20s linear infinite; /* Défilement de l'image pendant 20 secondes */
+    animation-delay: 4s; /* Délai de 5 secondes avant le début de l'animation */
+  }
+  .card img:hover {
+    transform: scale(1.1);
+}
